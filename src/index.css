@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.75rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(20, 184, 166, 0.14), transparent 34rem),
+    radial-gradient(circle at 100% 10%, rgba(59, 130, 246, 0.11), transparent 28rem),
+    linear-gradient(rgba(15, 23, 42, 0.36) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.36) 1px, transparent 1px),
+    #020617;
+  background-size: 56px 56px;
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.28);
+  color: #f8fafc;
+}
+
+section[id] {
+  scroll-margin-top: 5.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  .site-container {
+    @apply mx-auto max-w-[88rem] px-6 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .section {
+    @apply mx-auto max-w-[88rem] px-6 py-18 sm:px-8 sm:py-24 lg:px-12 lg:py-28 xl:px-16;
+  }
+
+  .section-heading {
+    @apply mb-10 max-w-4xl sm:mb-12;
+  }
+
+  .section-heading h2 {
+    @apply mt-3 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-5xl sm:leading-[1.05];
+  }
+
+  .section-heading p:not(.eyebrow) {
+    @apply mt-5 text-lg leading-8 text-slate-400;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-teal-200 sm:text-sm;
+  }
+
+  .card {
+    @apply rounded-3xl border border-white/10 bg-white/[0.052] shadow-2xl shadow-slate-950/45 backdrop-blur;
+  }
+
+  .project-card {
+    @apply rounded-3xl border border-white/10 bg-white/[0.055] shadow-2xl shadow-slate-950/45 backdrop-blur transition duration-300 hover:-translate-y-2 hover:border-teal-300/40 hover:bg-white/[0.075] hover:shadow-[0_32px_100px_rgba(20,184,166,0.16)];
+  }
+
+  .chip {
+    @apply rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-xs font-medium text-slate-300 transition group-hover:border-white/15 group-hover:text-slate-200;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-teal-300 px-5 py-3 font-semibold text-slate-950 shadow-lg shadow-teal-950/40 transition duration-300 hover:-translate-y-1 hover:bg-teal-200 hover:shadow-xl hover:shadow-teal-950/60 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.045] px-5 py-3 font-semibold text-slate-100 shadow-lg shadow-slate-950/20 transition duration-300 hover:-translate-y-1 hover:border-teal-300/60 hover:bg-white/[0.09] hover:text-white hover:shadow-slate-950/35 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+  }
+
+  .nav-link {
+    @apply rounded-full px-3 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/[0.07] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+  }
+
+  .mobile-nav-link {
+    @apply rounded-2xl px-4 py-3 text-base font-medium text-slate-200 transition hover:bg-white/[0.07] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+  }
+
+  .footer-link {
+    @apply rounded text-slate-400 transition hover:text-teal-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise 700ms ease-out both;
+}
