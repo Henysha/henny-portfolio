@@ -1,8 +1,28 @@
 {
   "name": "henny-yared-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Personal software engineering portfolio for fintech infrastructure, backend APIs, ledger systems, and full-stack platforms.",
+  "author": "Henok Yared",
+  "license": "UNLICENSED",
+  "homepage": "https://henny-portfolio.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Henysha/henny-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineering",
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss",
+    "fintech",
+    "backend",
+    "ledger-systems",
+    "vercel"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
