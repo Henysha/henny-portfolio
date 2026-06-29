@@ -1,5 +1,7 @@
 # Henny Yared Portfolio
 
+![CI](https://github.com/Henysha/henny-portfolio/actions/workflows/ci.yml/badge.svg)
+
 Personal software engineering portfolio for Henok "Henny" Yared.
 
 **Live site:** https://henny-portfolio.vercel.app
@@ -30,6 +32,7 @@ This site highlights projects focused on fintech infrastructure, backend APIs, l
 - Resume link support
 - Custom SVG favicon
 - SEO, Open Graph, and Twitter metadata
+- GitHub Actions CI for linting and production builds
 
 ## Local Development
 
@@ -41,6 +44,13 @@ npm run dev
 ## Production Build
 
 ```bash
+npm run build
+```
+
+## Quality Checks
+
+```bash
+npm run lint
 npm run build
 ```
 
