@@ -1,7 +1,7 @@
 {
   "name": "henny-yared-portfolio",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "description": "Personal software engineering portfolio for fintech infrastructure, backend APIs, ledger systems, and full-stack platforms.",
   "author": "Henok Yared",
