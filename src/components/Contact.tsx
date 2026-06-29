@@ -14,13 +14,13 @@ export function Contact() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="mailto:henokyrd@gmail.com" className="btn-primary">
+            <a href="mailto:henok.yared.dev@gmail.com" className="btn-primary">
               Email Henny
             </a>
             <a href="https://github.com/Henysha" target="_blank" rel="noreferrer" className="btn-secondary">
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/henok-yared" target="_blank" rel="noreferrer" className="btn-secondary">
+            <a href="https://www.linkedin.com/in/henok-yared-777x/" target="_blank" rel="noreferrer" className="btn-secondary">
               LinkedIn
             </a>
           </div>
