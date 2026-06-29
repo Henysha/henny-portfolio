@@ -4,7 +4,7 @@
 
 Personal software engineering portfolio for Henok "Henny" Yared.
 
-**Live site:** https://henny-portfolio.vercel.app
+**Live site:** https://www.henokyared.com
 
 This site highlights projects focused on fintech infrastructure, backend APIs, ledger systems, risk engines, funding workflows, and full-stack systems.
 
@@ -60,6 +60,6 @@ Deployed with Vercel from the `main` branch.
 
 ## Links
 
-- Portfolio: https://henny-portfolio.vercel.app
+- Portfolio: https://www.henokyared.com
 - GitHub: https://github.com/Henysha
 - LinkedIn: https://www.linkedin.com/in/henok-yared-777x/
