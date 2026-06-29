@@ -10,8 +10,8 @@ export function Hero() {
       <div className="site-container grid items-center gap-10 sm:gap-12 lg:min-h-[620px] lg:grid-cols-[minmax(0,1.12fr)_minmax(390px,0.88fr)] lg:gap-16 xl:min-h-[660px] xl:grid-cols-[minmax(0,1.18fr)_minmax(430px,0.82fr)] xl:gap-20">
         <div className="animate-rise max-w-5xl">
           <p className="eyebrow">Minneapolis, MN · Fintech Infrastructure</p>
-          <h1 className="mt-5 max-w-6xl text-5xl font-semibold tracking-[-0.06em] text-white sm:mt-6 sm:text-6xl lg:text-7xl xl:text-8xl">
-            Henny Yared
+          <h1 className="mt-5 max-w-6xl text-balance text-4xl font-semibold tracking-[-0.06em] text-white sm:mt-6 sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">
+            Henok &ldquo;Henny&rdquo; Yared
           </h1>
           <p className="mt-6 max-w-4xl text-xl font-medium leading-8 text-slate-100 sm:mt-7 sm:text-2xl sm:leading-9">
             Software Engineer building fintech infrastructure, ledger systems, risk engines, and community capital

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.henokyared.com/sitemap.xml
+Sitemap: https://henny-portfolio.vercel.app/sitemap.xml
